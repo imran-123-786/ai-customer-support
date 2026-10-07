@@ -1,0 +1,19 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+frontend/venv/
+
+# Local runtime files
+*.db
+*.sqlite
+*.sqlite3
+.env
+
+# Streamlit caches
+.streamlit/

@@ -1,0 +1,30 @@
+[
+  {
+    "question": "what is support studio",
+    "answer": "Support Studio is an AI-powered customer support chatbot that helps answer your questions 24/7. It uses advanced AI technology to provide instant support and can help with order inquiries, pricing questions, refunds, and general customer service."
+  },
+  {
+    "question": "how does the chatbot work",
+    "answer": "Our chatbot uses artificial intelligence to understand your questions and provide relevant answers. It searches through our knowledge base and documentation to find the best response for you. The more information you provide, the better we can help you."
+  },
+  {
+    "question": "what can i ask the chatbot",
+    "answer": "You can ask about anything related to our products and services! Common topics include: pricing and plans, order status and tracking, refund and return policies, account and billing questions, technical support, and general inquiries. We're here to help with any question you have."
+  },
+  {
+    "question": "is my information secure",
+    "answer": "Yes, absolutely! We take data security very seriously. Your conversations with our chatbot are encrypted and stored securely. We never share your personal information with third parties. You can read our Privacy Policy for more details about how we protect your data."
+  },
+  {
+    "question": "how do i get human support",
+    "answer": "If you need to speak with a human agent, you can reach us at support@supportstudio.com. Our support team is available Monday through Friday, 9 AM to 6 PM. For urgent matters, please include 'URGENT' in your email subject line and we'll respond within 2 hours."
+  },
+  {
+    "question": "what are your service hours",
+    "answer": "Our chatbot is available 24/7 to assist you anytime! For human support, our team is available Monday to Friday from 9:00 AM to 6:00 PM (local time). During weekends and holidays, we respond to urgent queries within 24 hours."
+  },
+  {
+    "question": "how do i upload documents for better support",
+    "answer": "You can upload documents like PDF, TXT, CSV, or JSON files using the Upload Documents section in the sidebar. Our AI will read and understand your documents to provide more accurate answers. This is useful for sharing order details, invoices, or specific questions about your documents. The chatbot can then reference these documents when answering your questions."
+  }
+]

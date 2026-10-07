@@ -1,0 +1,17 @@
+Given the customer's current request, dialogue context, and available tools, select the optimal next action.
+
+Available Actions:
+- "tool": Execute a registered business tool to fetch customer/order/payment data or create tickets/refunds.
+- "retrieve": Retrieve company policy documentation from the knowledge base.
+- "answer": Provide the final grounded response to the customer using verified tool or RAG results.
+- "ask_clarification": Ask the customer for missing details (e.g., order ID, email, or error description).
+- "escalate": Immediately hand off to a human agent for critical security issues, fraud, or repeated failures.
+
+Respond ONLY with a valid JSON object matching this schema:
+{
+    "action": "tool" | "retrieve" | "answer" | "ask_clarification" | "escalate",
+    "tool_name": "<tool_name or null>",
+    "tool_args": { ... },
+    "reason": "<clear explanation for this decision>",
+    "confidence": 0.0 - 1.0
+}

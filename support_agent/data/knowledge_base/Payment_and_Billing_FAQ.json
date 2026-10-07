@@ -1,0 +1,22 @@
+[
+  {
+    "topic": "Payment Methods",
+    "question": "What payment methods are supported?",
+    "answer": "We accept major Credit/Debit Cards (Visa, MasterCard, RuPay), UPI (Google Pay, PhonePe, Paytm), Net Banking across 40+ banks, and PayPal."
+  },
+  {
+    "topic": "Failed Deductions",
+    "question": "My account was debited but order status is pending or failed. What should I do?",
+    "answer": "Bank gateway timeouts can cause transient pending holds. If funds were deducted, your bank will automatically auto-reverse the amount within 24 to 48 hours. If not reversed after 48 hours, share your Payment Transaction Reference with support."
+  },
+  {
+    "topic": "Duplicate Payment",
+    "question": "Why was I charged twice for the same order?",
+    "answer": "Double clicks during payment confirmation or network retries may capture duplicate authorization holds. Our billing agent can verify both transactions and trigger an immediate refund of the duplicate amount within 3 to 5 business days."
+  },
+  {
+    "topic": "Invoices and Tax Receipts",
+    "question": "How can I download a GST or VAT invoice?",
+    "answer": "Digital tax invoices are generated automatically upon order fulfillment and can be downloaded from your account dashboard under Order History."
+  }
+]

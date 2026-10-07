@@ -1,0 +1,227 @@
+[
+  {
+    "id": "TC-01",
+    "name": "Refund policy inquiry",
+    "input": "What is your refund policy?",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": ["Refund_and_Cancellation_Policy.md"]
+  },
+  {
+    "id": "TC-02",
+    "name": "Order tracking lookup",
+    "input": "Where is my order ORD-1001?",
+    "expected_intent": "Order Tracking",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-03",
+    "name": "Duplicate payment refund request",
+    "input": "I was charged twice for ORD-1024 and I want a refund.",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-04",
+    "name": "Explicit human escalation",
+    "input": "I've been trying for three days and nobody is helping me. Connect me to a human.",
+    "expected_intent": "General Inquiry",
+    "expected_tool": "escalate_to_human",
+    "expected_escalation": true,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-05",
+    "name": "Standard order refund check",
+    "input": "Can I get a refund for order ORD-1002?",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-06",
+    "name": "Shipping speed inquiry",
+    "input": "How many days does standard shipping take?",
+    "expected_intent": "Order Tracking",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": ["Shipping_and_Delivery_Guide.md"]
+  },
+  {
+    "id": "TC-07",
+    "name": "Cancel pending order",
+    "input": "I want to cancel order ORD-1005.",
+    "expected_intent": "Cancellation",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-08",
+    "name": "Missing order ID clarification",
+    "input": "Can you check the delivery status of my package?",
+    "expected_intent": "Order Tracking",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-09",
+    "name": "Suspected account compromise",
+    "input": "My account was hacked and someone changed my password. Security fraud alert!",
+    "expected_intent": "Account Access",
+    "expected_tool": "escalate_to_human",
+    "expected_escalation": true,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-10",
+    "name": "Legal lawsuit threat",
+    "input": "If this is not resolved today I will sue and contact my lawyer.",
+    "expected_intent": "Complaint",
+    "expected_tool": "escalate_to_human",
+    "expected_escalation": true,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-11",
+    "name": "Payment methods question",
+    "input": "What payment methods are supported on your platform?",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": ["Payment_and_Billing_FAQ.json"]
+  },
+  {
+    "id": "TC-12",
+    "name": "Expired refund window order",
+    "input": "Can I refund order ORD-1025 delivered 45 days ago?",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-13",
+    "name": "Unknown policy question",
+    "input": "What is your policy regarding international crypto donations in Mars colony?",
+    "expected_intent": "General Inquiry",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-14",
+    "name": "Customer language preference capture",
+    "input": "I always prefer Hindi responses from support.",
+    "expected_intent": "General Inquiry",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-15",
+    "name": "Damaged goods report",
+    "input": "My parcel for ORD-1002 arrived with damaged external packaging.",
+    "expected_intent": "Order Tracking",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-16",
+    "name": "Non-refundable items policy",
+    "input": "Are digital gift cards and software licenses refundable?",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": ["Refund_and_Cancellation_Policy.md"]
+  },
+  {
+    "id": "TC-17",
+    "name": "Failed bank deduction advice",
+    "input": "My bank debited the money but the payment failed.",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": ["Payment_and_Billing_FAQ.json"]
+  },
+  {
+    "id": "TC-18",
+    "name": "Concise communication style preference",
+    "input": "Please keep answers in bullet points only.",
+    "expected_intent": "General Inquiry",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-19",
+    "name": "Customer supervisor request",
+    "input": "I want to speak with a supervisor immediately.",
+    "expected_intent": "General Inquiry",
+    "expected_tool": "escalate_to_human",
+    "expected_escalation": true,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-20",
+    "name": "Invalid order lookup check",
+    "input": "Check status of order ORD-9999",
+    "expected_intent": "Order Tracking",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-21",
+    "name": "Invoice download guidance",
+    "input": "How can I download a tax invoice for my purchase?",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": ["Payment_and_Billing_FAQ.json"]
+  },
+  {
+    "id": "TC-22",
+    "name": "Express shipping delivery window",
+    "input": "When will express delivery arrive?",
+    "expected_intent": "Order Tracking",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": ["Shipping_and_Delivery_Guide.md"]
+  },
+  {
+    "id": "TC-23",
+    "name": "Bengali language request",
+    "input": "Please reply in Bengali for all my orders.",
+    "expected_intent": "General Inquiry",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-24",
+    "name": "Sensitive refund operation check",
+    "input": "Please refund my order ORD-1002 right now.",
+    "expected_intent": "Billing & Refund",
+    "expected_tool": "get_order_details",
+    "expected_escalation": false,
+    "expected_sources": []
+  },
+  {
+    "id": "TC-25",
+    "name": "General friendly greeting",
+    "input": "Hello SupportAgent, hope you have a great day!",
+    "expected_intent": "General Inquiry",
+    "expected_tool": null,
+    "expected_escalation": false,
+    "expected_sources": []
+  }
+]

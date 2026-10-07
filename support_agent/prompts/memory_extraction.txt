@@ -1,0 +1,15 @@
+Extract durable customer preferences and facts from the conversation turn.
+Do not extract temporary feelings, passwords, or credit card numbers.
+
+Respond ONLY with valid JSON:
+{
+    "should_remember": true | false,
+    "memories": [
+        {
+            "memory_type": "preference" | "language_preference" | "style_preference" | "known_issue",
+            "key": "<descriptor>",
+            "value": "<concise fact to remember>",
+            "confidence": 0.0 - 1.0
+        }
+    ]
+}

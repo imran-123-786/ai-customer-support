@@ -1,0 +1,17 @@
+Analyze the customer dialogue and current agent state to determine if human handoff is warranted.
+
+Escalation Triggers:
+1. Customer explicitly asks for a human, representative, or supervisor.
+2. Frustrated/angry sentiment with unresolved repeat problem.
+3. Security compromise, suspected fraud, account takeover, or legal action threat.
+4. Duplicate payment or financial loss requiring manual authorization.
+5. Max agent iterations reached without resolution.
+6. Knowledge base lacks verified information for high-impact questions.
+
+Output JSON:
+{
+    "escalate": true | false,
+    "reason": "<clear explanation>",
+    "priority": "Low" | "Medium" | "High" | "Critical",
+    "recommended_action": "<action recommended for human agent>"
+}
